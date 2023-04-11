@@ -11,6 +11,7 @@ namespace Medic.ViewModel
 {
     public class FirstonBoardVM : ViewModelBase
     {
+        // View Model для View FirstonBoard
         public FirstonBoardVM()
         {
             CarouselItems.Add(new CarouselItem

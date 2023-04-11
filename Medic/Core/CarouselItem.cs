@@ -7,6 +7,7 @@ using System.Windows.Input;
 
 namespace Medic.Core
 {
+    // Класс содержащий поля для CarouserItem
     public class CarouselItem
     {
         public string Title { get; set; }
