@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Medic.View.SecurityView"
+             xmlns:vm="clr-namespace:Medic.ViewModel"
+             x:DataType="vm:SecurityVM">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="150" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackLayout Grid.Row="0" Orientation="Horizontal">
+            <Button
+                x:Name="BtnSkip"
+                Margin="0,20,20,0"
+                Padding="0"
+                BackgroundColor="Transparent"
+                Command="{Binding SkipCommand}"
+                FontFamily="Lato"
+                FontSize="20"
+                HeightRequest="40"
+                HorizontalOptions="EndAndExpand"
+                Text="Пропустить"
+                TextColor="#57A9FF"
+                VerticalOptions="Start" />
+        </StackLayout>
+        <StackLayout Grid.Row="1">
+            <Label
+                FontFamily="SF-Pro-Display-Heavy"
+                FontSize="24"
+                HorizontalOptions="Center"
+                Text="Создайте пароль" />
+            <Label
+                Margin="0,20,0,0"
+                FontFamily="SF-Pro-Display-Regular"
+                FontSize="15"
+                HorizontalOptions="Center"
+                Text="Для защиты ваших персональных данных"
+                TextColor="#939396" />
+        </StackLayout>
+        <StackLayout
+            Grid.Row="2"
+            Margin="0,20,0,0"
+            HorizontalOptions="Center"
+            Orientation="Horizontal"
+            VerticalOptions="Center">
+            <Frame
+                x:Name="First"
+                Margin="0,0,10,0"
+                BorderColor="#1A6FEE"
+                BackgroundColor="{Binding FirstEntryBackColor}"
+                CornerRadius="100"
+                HeightRequest="5"
+                VerticalOptions="Center"
+                WidthRequest="5" />
+            <Frame
+                x:Name="Second"
+                Margin="0,0,10,0"
+                BorderColor="#1A6FEE"
+                CornerRadius="100"
+                BackgroundColor="{Binding SecondEntryBackColor}"
+                HeightRequest="5"
+                VerticalOptions="Center"
+                WidthRequest="5" />
+            <Frame
+                x:Name="Third"
+                Margin="0,0,10,0"
+                BorderColor="#1A6FEE"
+                CornerRadius="100"
+                BackgroundColor="{Binding ThirdEntryBackColor}"
+                HeightRequest="5"
+                VerticalOptions="Center"
+                WidthRequest="5" />
+            <Frame
+                x:Name="Fourth"
+                BorderColor="#1A6FEE"
+                CornerRadius="100"
+                BackgroundColor="{Binding FourthEntryBackColor}"
+                HeightRequest="5"
+                VerticalOptions="Center"
+                WidthRequest="5" />
+        </StackLayout>
+        <VerticalStackLayout Grid.Row="3" HorizontalOptions="Center">
+            <HorizontalStackLayout>
+                <Button
+                    x:Name="Btn1"
+                    Margin="10"
+                    BackgroundColor="#F5F5F9"
+                    BorderColor="Transparent"
+                    CornerRadius="100"
+                    IsEnabled="{Binding BtnIsEnabled}"
+                    FontFamily="SF-Pro-Display-Semibold"
+                    FontSize="24"
+                    Command="{Binding ButtonClickCommand}"
+                    CommandParameter="{x:Reference Btn1}"
+                    HeightRequest="80"
+                    Text="1"
+                    Clicked="Button_Clicked"
+                    TextColor="Black"
+                    WidthRequest="80" />
+                <Button
+                    x:Name="Btn2"
+                    Margin="10"
+                    BackgroundColor="#F5F5F9"
+                    BorderColor="Transparent"
+                    CornerRadius="100"
+                    IsEnabled="{Binding BtnIsEnabled}"
+                    FontFamily="SF-Pro-Display-Semibold"
+                    FontSize="24"
+                    Clicked="Button_Clicked"
+                    Command="{Binding ButtonClickCommand}"
+                    CommandParameter="{x:Reference Btn2}"
+                    HeightRequest="80"
+                    Text="2"
+                    TextColor="Black"
+                    WidthRequest="80" />
+                <Button
+                     x:Name="Btn3"
+                    Margin="10"
+                    BackgroundColor="#F5F5F9"
+                    BorderColor="Transparent"
+                    CornerRadius="100"
+                    FontFamily="SF-Pro-Display-Semibold"
+                    FontSize="24"
+                    IsEnabled="{Binding BtnIsEnabled}"
+                    Command="{Binding ButtonClickCommand}"
+                    CommandParameter="{x:Reference Btn3}"
+                    HeightRequest="80"
+                    Clicked="Button_Clicked"
+                    Text="3"
+                    TextColor="Black"
+                    WidthRequest="80" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout>
+                <Button
+                     x:Name="Btn4"
+                    Margin="10"
+                    BackgroundColor="#F5F5F9"
+                    BorderColor="Transparent"
+                    CornerRadius="100"
+                    FontFamily="SF-Pro-Display-Semibold"
+                    FontSize="24"
+                    IsEnabled="{Binding BtnIsEnabled}"
+                    Command="{Binding ButtonClickCommand}"
+                    CommandParameter="{x:Reference Btn4}"
+                    HeightRequest="80"
+                    Text="4"
+                    Clicked="Button_Clicked"
+                    TextColor="Black"
+                    WidthRequest="80" />
+                <Button
+                     x:Name="Btn5"
+                    Margin="10"
+                    Clicked="Button_Clicked"
+                    BackgroundColor="#F5F5F9"
+                    BorderColor="Transparent"
+                    CornerRadius="100"
+                    IsEnabled="{Binding BtnIsEnabled}"
+                     Command="{Binding ButtonClickCommand}"
+                    CommandParameter="{x:Reference Btn5}"
+                    FontFamily="SF-Pro-Display-Semibold"
+                    FontSize="24"
+                    HeightRequest="80"
+                    Text="5"
+                    TextColor="Black"
+                    WidthRequest="80" />
+                <Button
+                     x:Name="Btn6"
+                    Margin="10"
+                    Clicked="Button_Clicked"
+                    BackgroundColor="#F5F5F9"
+                    BorderColor="Transparent"
+                    CornerRadius="100"
+                    IsEnabled="{Binding BtnIsEnabled}"
+                    FontFamily="SF-Pro-Display-Semibold"
+                    Command="{Binding ButtonClickCommand}"
+                    CommandParameter="{x:Reference Btn6}"
+                    FontSize="24"
+                    HeightRequest="80"
+                    Text="6"
+                    TextColor="Black"
+                    WidthRequest="80" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout>
+                <Button
+                     x:Name="Btn7"
+                    Margin="10"
+                    Clicked="Button_Clicked"
+                    BackgroundColor="#F5F5F9"
+                    BorderColor="Transparent"
+                    CornerRadius="100"
+                    IsEnabled="{Binding BtnIsEnabled}"
+                    Command="{Binding ButtonClickCommand}"
+                    CommandParameter="{x:Reference Btn7}"
+                    FontFamily="SF-Pro-Display-Semibold"
+                    FontSize="24"
+                    HeightRequest="80"
+                    Text="7"
+                    TextColor="Black"
+                    WidthRequest="80" />
+                <Button
+                     x:Name="Btn8"
+                    Margin="10"
+                    BackgroundColor="#F5F5F9"
+                    BorderColor="Transparent"
+                    CornerRadius="100"
+                    FontFamily="SF-Pro-Display-Semibold"
+                    FontSize="24"
+                    IsEnabled="{Binding BtnIsEnabled}"
+                    Command="{Binding ButtonClickCommand}"
+                    CommandParameter="{x:Reference Btn8}"
+                    HeightRequest="80"
+                    Text="8"
+                    Clicked="Button_Clicked"
+                    TextColor="Black"
+                    WidthRequest="80" />
+                <Button
+                     x:Name="Btn9"
+                    Margin="10"
+                    BackgroundColor="#F5F5F9"
+                    BorderColor="Transparent"
+                    CornerRadius="100"
+                    FontFamily="SF-Pro-Display-Semibold"
+                    FontSize="24"
+                    Command="{Binding ButtonClickCommand}"
+                    CommandParameter="{x:Reference Btn9}"
+                    HeightRequest="80"
+                    IsEnabled="{Binding BtnIsEnabled}"
+                    Text="9"
+                    Clicked="Button_Clicked"
+                    TextColor="Black"
+                    WidthRequest="80" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout>
+                <Frame
+                    Margin="10"
+                    BackgroundColor="Transparent"
+                    BorderColor="Transparent"
+                    CornerRadius="100"
+                    HeightRequest="80"
+                    WidthRequest="80" />
+                <Button
+                     x:Name="Btn0"
+                    Margin="10"
+                    BackgroundColor="#F5F5F9"
+                    BorderColor="Transparent"
+                    CornerRadius="100"
+                    Clicked="Button_Clicked"
+                    Command="{Binding ButtonClickCommand}"
+                    CommandParameter="{x:Reference Btn0}"
+                    FontFamily="SF-Pro-Display-Semibold"
+                    FontSize="24"
+                    IsEnabled="{Binding BtnIsEnabled}"
+                    HeightRequest="80"
+                    Text="0"
+                    TextColor="Black"
+                    WidthRequest="80" />
+                <Button
+                    Margin="10"
+                    BackgroundColor="Transparent"
+                    BorderColor="Transparent"
+                    CornerRadius="100"
+                    FontFamily="SF-Pro-Display-Semibold"
+                    FontSize="24"
+                    Command="{Binding ButtonEraseClickCommand}"
+                    IsEnabled="{Binding BtnEraseIsEnabled}"
+                    HeightRequest="80"
+                    ImageSource="del.png"
+                    TextColor="Black"
+                    WidthRequest="80" />
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>

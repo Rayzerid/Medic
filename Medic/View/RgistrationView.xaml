@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Medic.View.RgistrationView"
+             xmlns:vm="clr-namespace:Medic.ViewModel"
+             x:DataType="vm:RigistrationVM">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100" />
+            <RowDefinition Height="100" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackLayout
+            Grid.Row="0"
+            Margin="20,0,0,20"
+            Orientation="Horizontal">
+            <Label
+                FontFamily="SF-Pro-Display-Heavy"
+                FontSize="24"
+                HorizontalOptions="Start"
+                Text="Создание карты пациента"
+                VerticalOptions="Center"
+                WidthRequest="200" />
+            <Button
+                x:Name="BtnSkip"
+                Margin="60,0,0,20"
+                Padding="0"
+                Command="{Binding SkipCommand}"
+                BackgroundColor="Transparent"
+                FontFamily="Lato"
+                FontSize="17"
+                HeightRequest="40"
+                HorizontalOptions="End"
+                Text="Пропустить"
+                TextColor="#57A9FF" />
+        </StackLayout>
+        <StackLayout Grid.Row="1" Margin="20,0,0,20">
+            <Label
+                FontFamily="SF-Pro-Display-Regular"
+                FontSize="15"
+                Text="Без карты пациента вы не сможете заказать анализы."
+                TextColor="#939396" />
+            <Label
+                Margin="0,10,0,0"
+                FontFamily="SF-Pro-Display-Regular"
+                FontSize="15"
+                Text="В картах пациентов будут храниться результаты анализов вас и ваших близких."
+                TextColor="#939396" />
+        </StackLayout>
+        <StackLayout Grid.Row="2" Margin="20,0,20,0">
+            <Frame
+                Margin="0,0,0,24"
+                Padding="3"
+                Background="#F5F5F9"
+                BorderColor="#EBEBEB">
+                <Entry
+                    Margin="5,0,0,0"
+                    FontFamily="SF-Pro-Display-Regular"
+                    Text="{Binding UserName}"
+                    FontSize="15"
+                    Placeholder="Имя" />
+            </Frame>
+            <Frame
+                Margin="0,0,0,24"
+                Padding="3"
+                Background="#F5F5F9"
+                BorderColor="#EBEBEB">
+                <Entry
+                    Margin="5,0,0,0"
+                    FontFamily="SF-Pro-Display-Regular"
+                    FontSize="15"
+                    Text="{Binding UserMiddleName}"
+                    Placeholder="Отчество" />
+            </Frame>
+            <Frame
+                Margin="0,0,0,24"
+                Padding="3"
+                Background="#F5F5F9"
+                BorderColor="#EBEBEB">
+                <Entry
+                    Margin="5,0,0,0"
+                    FontFamily="SF-Pro-Display-Regular"
+                    FontSize="15"
+                    Text="{Binding UserLastName}"
+                    Placeholder="Фамилия" />
+            </Frame>
+            <Frame
+                Margin="0,0,0,24"
+                Padding="3"
+                Background="#F5F5F9"
+                BorderColor="#EBEBEB">
+                <Entry
+                    Margin="5,0,0,0"
+                    FontFamily="SF-Pro-Display-Regular"
+                    FontSize="15"
+                    Text="{Binding Birthday}"
+                    Placeholder="Дата рождения" />
+            </Frame>
+            <Frame
+                Margin="0,0,0,24"
+                Padding="3"
+                Background="#F5F5F9"
+                BorderColor="#EBEBEB">
+                <Picker
+                    Title="Пол"
+                    Margin="5,0,0,0"
+                    SelectedItem="{Binding Gender}"
+                    FontFamily="SF-Pro-Display-Regular"
+                    FontSize="15"
+                    TitleColor="#939396">
+                    <Picker.Items>
+                        <x:String>
+                            Мужской
+                        </x:String>
+                        <x:String>
+                            Женский
+                        </x:String>
+                    </Picker.Items>
+                </Picker>
+            </Frame>
+            <Button
+                Margin="0,27,0,0"
+                Background="#1A6FEE"
+                Command="{Binding NextCommand}"
+                IsEnabled="{Binding NextBtnIsEnabled}"
+                FontFamily="SF-Pro-Display-SemiBold"
+                FontSize="17"
+                HeightRequest="56"
+                Text="Создать" />
+        </StackLayout>
+    </Grid>
+</ContentPage>
