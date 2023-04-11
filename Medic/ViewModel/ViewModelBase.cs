@@ -10,6 +10,7 @@ namespace Medic.ViewModel
 {
     public class ViewModelBase : INotifyPropertyChanged
     {
+        //Основной VM
         protected bool SetProperty<T>(ref T backingStore, T value,
        [CallerMemberName] string propertyName = "",
        Action onChanged = null)
