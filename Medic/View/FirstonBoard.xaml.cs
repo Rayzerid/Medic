@@ -10,5 +10,15 @@ public partial class NewPage1 : ContentPage
         InitializeComponent();
 
         this.BindingContext = new FirstonBoardVM();
+
+        if (!VersionTracking.IsFirstLaunchEver)
+        {
+            Navigation.PushModalAsync(new DashboardView());
+        }
+
+        if (Preferences.Get("UserMail", null) != null)
+        {
+            Navigation.PushModalAsync(new SecurityView());
+        }
     }
 }

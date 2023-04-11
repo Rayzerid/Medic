@@ -15,5 +15,21 @@
         ContentTemplate="{DataTemplate view:DashboardView}"
         Route="DashboardView"
         Shell.TabBarIsVisible="False" />
+    <ShellContent
+        ContentTemplate="{DataTemplate view:EmailCheckView}"
+        Route="EmailCheckView"
+        Shell.TabBarIsVisible="False" />
+    <ShellContent
+        ContentTemplate="{DataTemplate view:SecurityView}"
+        Route="SecurityView"
+        Shell.TabBarIsVisible="False" />
+    <ShellContent
+        ContentTemplate="{DataTemplate view:RgistrationView}"
+        Route="RgistrationView"
+        Shell.TabBarIsVisible="False" />
+    <ShellContent
+        ContentTemplate="{DataTemplate view:AnalyzesView}"
+        Route="AnalyzesView"
+        Shell.TabBarIsVisible="False" />
 
 </Shell>

@@ -48,14 +48,23 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Fonts\Lato-Regular.ttf" />
+	  <None Remove="Resources\Fonts\SF-Pro-Display-Heavy.ttf" />
+	  <None Remove="Resources\Fonts\SF-Pro-Display-Medium.ttf" />
+	  <None Remove="Resources\Fonts\SF-Pro-Display-Regular.ttf" />
+	  <None Remove="Resources\Fonts\SF-Pro-Display-Semibold.ttf" />
+	  <None Remove="Resources\Images\analysis.svg" />
+	  <None Remove="Resources\Images\del.svg" />
 	  <None Remove="Resources\Images\firstimage.svg" />
+	  <None Remove="Resources\Images\hello.svg" />
+	  <None Remove="Resources\Images\loop.svg" />
+	  <None Remove="Resources\Images\result.svg" />
 	  <None Remove="Resources\Images\secondimage.svg" />
 	  <None Remove="Resources\Images\shape.svg" />
+	  <None Remove="Resources\Images\support.svg" />
 	  <None Remove="Resources\Images\thirdimage.svg" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Folder Include="Model\" />
+	  <None Remove="Resources\Images\user.svg" />
+	  <None Remove="Resources\Images\vector.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -65,10 +74,22 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="View\AnalyzesView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="View\DashboardView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="View\EmailCheckView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="View\FirstonBoard.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\RgistrationView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\SecurityView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
