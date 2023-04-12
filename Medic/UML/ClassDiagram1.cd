@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Medic.Core.CarouselCatalog" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\CarouselCatalog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Medic.Core.CarouselItem" Collapsed="true">
+    <Position X="0.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAgAEAAAAAAAAAAAAAABAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Core\CarouselItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Medic.Core.CatalogMenu" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAIAAAAIAAAAAAAAAAEAAAAAgAIAgAAAgA=</HashCode>
+      <FileName>Core\CatalogMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Medic.Model.HttpRequests" Collapsed="true">
+    <Position X="0.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAEAAAAAAAAAAAAAAAAAEAABAAAAAAAAAAA=</HashCode>
+      <FileName>Model\HttpRequests.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Medic.Model.NewItem" Collapsed="true">
+    <Position X="0.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAIAAAAAAAEAAEAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Model\NewItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Medic.View.AnalyzesView" Collapsed="true">
+    <Position X="12.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\AnalyzesView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Medic.View.DashboardView" Collapsed="true">
+    <Position X="10.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\DashboardView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Medic.View.EmailCheckView" Collapsed="true">
+    <Position X="6.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\EmailCheckView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Medic.View.NewPage1" Collapsed="true">
+    <Position X="8.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\FirstonBoard.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Medic.View.RgistrationView" Collapsed="true">
+    <Position X="5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\RgistrationView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Medic.View.SecurityView" Collapsed="true">
+    <Position X="3.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>View\SecurityView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Medic.ViewModel.AnalyzesVM" Collapsed="true">
+    <Position X="12.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAEAAEQABAAAAAAAAACAAAAAAAEAgACAgAAAAAAAAQA=</HashCode>
+      <FileName>ViewModel\AnalyzesVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Medic.ViewModel.DashboardVM" Collapsed="true">
+    <Position X="8.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAEAAAAAAAAAiAABAAAgAAAAAAEA=</HashCode>
+      <FileName>ViewModel\DashboardVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Medic.ViewModel.EmailCheckVM" Collapsed="true">
+    <Position X="6.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABcAAAIAwAMAGgAAAAEAAAAAAAAgAEAAAAAgKAAAgAA=</HashCode>
+      <FileName>ViewModel\EmailCheckVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Medic.ViewModel.FirstonBoardVM" Collapsed="true">
+    <Position X="10.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAIAAAAAAAAgAgAAAA=</HashCode>
+      <FileName>ViewModel\FirstonBoardVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Medic.ViewModel.RigistrationVM" Collapsed="true">
+    <Position X="5" Y="4.5" Width="1.5" />
+    <InheritanceLine Type="Medic.ViewModel.ViewModelBase" ManuallyRouted="true">
+      <Path>
+        <Point X="8.5" Y="6.25" />
+        <Point X="8.5" Y="5.575" />
+        <Point X="5.75" Y="5.575" />
+        <Point X="5.75" Y="5.191" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAEEAAAIAgAASAAEAAAEAAAAIqAAAAAQIAAgIAAAA=</HashCode>
+      <FileName>ViewModel\RigistrationVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Medic.ViewModel.SecurityVM" Collapsed="true">
+    <Position X="3.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAQAEEQBAAAQCAAAIAAAACCEAAIAAACCACAERAAACAA=</HashCode>
+      <FileName>ViewModel\SecurityVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Medic.ViewModel.ViewModelBase" Collapsed="true">
+    <Position X="7.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAgAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\ViewModelBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
