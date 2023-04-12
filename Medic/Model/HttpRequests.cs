@@ -1,9 +1,12 @@
-﻿using System;
+﻿using Medic.Core;
+using System;
+using Medic.ViewModel;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace Medic.Model
 {
@@ -39,6 +42,30 @@ namespace Medic.Model
                 response = await client.SendAsync(request).Result.Content.ReadAsStringAsync();
             }
             return response;
+        }
+
+        public async void GetNews(AnalyzesVM analyzesVM)
+        {
+            string response;
+            using (var client = new HttpClient())
+            {
+                string url = "https://medic.madskill.ru/api/news";
+                response = await client.GetAsync(url).Result.Content.ReadAsStringAsync();
+            }
+            ObservableCollection<NewItem> newsItems = JsonConvert.DeserializeObject<ObservableCollection<NewItem>>(response);
+            analyzesVM.NewsCollection = newsItems;
+        }
+        public async void GetCatalog(AnalyzesVM analyzesVM)
+        {
+            string response;
+            using (var client = new HttpClient())
+            {
+                string url = "https://medic.madskill.ru/api/catalog";
+                response = await client.GetAsync(url).Result.Content.ReadAsStringAsync();
+            }
+            ObservableCollection<CatalogMenu> catalogItem = JsonConvert.DeserializeObject<ObservableCollection<CatalogMenu>>(response);
+
+            analyzesVM.CatalogCollection = catalogItem;
         }
     }
 }

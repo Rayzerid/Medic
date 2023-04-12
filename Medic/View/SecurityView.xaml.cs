@@ -1,4 +1,3 @@
-using Java.Security;
 using Medic.ViewModel;
 namespace Medic.View;
 
