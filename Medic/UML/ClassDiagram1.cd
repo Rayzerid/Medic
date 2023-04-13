@@ -3,7 +3,7 @@
   <Class Name="Medic.Core.CarouselCatalog" Collapsed="true">
     <Position X="0.5" Y="4.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAEAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Core\CarouselCatalog.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -80,7 +80,7 @@
   <Class Name="Medic.ViewModel.AnalyzesVM" Collapsed="true">
     <Position X="12.25" Y="4.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>CAEAAEQABAAAAAAAAACAAAAAAAEAgACAgAAAAAAAAQA=</HashCode>
+      <HashCode>AAEAAEQAAAAAAAAAAACAAAAAAAAAgACAAAAAAAAAAQA=</HashCode>
       <FileName>ViewModel\AnalyzesVM.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -109,7 +109,7 @@
     <Position X="5" Y="4.5" Width="1.5" />
     <InheritanceLine Type="Medic.ViewModel.ViewModelBase" ManuallyRouted="true">
       <Path>
-        <Point X="8.5" Y="6.25" />
+        <Point X="8.5" Y="6" />
         <Point X="8.5" Y="5.575" />
         <Point X="5.75" Y="5.575" />
         <Point X="5.75" Y="5.191" />
@@ -122,18 +122,26 @@
   </Class>
   <Class Name="Medic.ViewModel.SecurityVM" Collapsed="true">
     <Position X="3.25" Y="4.5" Width="1.5" />
+    <InheritanceLine Type="Medic.ViewModel.ViewModelBase" ManuallyRouted="true">
+      <Path>
+        <Point X="8.5" Y="6" />
+        <Point X="8.5" Y="5.575" />
+        <Point X="4" Y="5.575" />
+        <Point X="4" Y="5.191" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>QAQAEEQBAAAQCAAAIAAAACCEAAIAAACCACAERAAACAA=</HashCode>
       <FileName>ViewModel\SecurityVM.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Medic.ViewModel.ViewModelBase" Collapsed="true">
-    <Position X="7.75" Y="6.25" Width="1.5" />
+    <Position X="7.75" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAgAEAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ViewModel\ViewModelBase.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
+    <Lollipop Orientation="Bottom" Position="0.142" />
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
